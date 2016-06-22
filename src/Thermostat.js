@@ -37,7 +37,7 @@ Thermostat.prototype.increaseTemperature = function() {
 		if (this._temperature < 18) {
 			return 'green';
 		} else if (this._temperature < 25) {
-			return 'yellow';
+			return '#ffc107';
 		} else {
 			return 'red';
 		};

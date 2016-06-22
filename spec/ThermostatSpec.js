@@ -70,7 +70,7 @@ describe("Thermostat", function() {
       for (var i = 0; i < 4; i++) {
         thermostat.increaseTemperature();
       };
-      expect(thermostat.colour()).toEqual("yellow");
+      expect(thermostat.colour()).toEqual("#ffc107");
     });
 
     it("red if more or equal to 25", function() {
