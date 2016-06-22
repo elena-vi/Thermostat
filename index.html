@@ -6,9 +6,25 @@
     <script src="src/Thermostat.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="src/interface.js"> </script>
+    <link rel="stylesheet" type="text/css" href="src/style.css">
   </head>
   <body>
-    <h1>Thermostat</h1>
+    <div class="outsideWeather">
+      <h1>Outside Weather</h1>
+      <img src="" id="icon" alt="Weather Icon">
+      <h2>Current temperature: <span id="currentTemperature"></span>&#8451;</h2>
+      <label for="currentCity">Current city</label>
+      <select id="currentCity">
+        <option value="london">London</option>
+        <option value="paris">Paris</option>
+        <option value="vancouver">Vancouver</option>
+        <option value="vilnius">Vilnius</option>
+        <option value="charlottetown">Charlottetown</option>
+        <option value="prienai">Prienai</option>
+      </select>
+    </div>
+    <div class="thermostat">
+      <h1>Thermostat</h1>
       <h2 id='temperatureDisplay'><span id='temperature'></span>&#8451;</h2>
       <h5>Power Saving Mode is <span id='powermode'>On</span></h5>
       <div class="controls">
@@ -17,6 +33,6 @@
         <button type="button" id='changePowerMode' name="button">Toggle Powermode</button>
         <button type="button" id='reset' name="button">Reset</button>
       </div>
-
+    </div>
   </body>
 </html>
