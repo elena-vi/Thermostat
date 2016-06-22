@@ -34,6 +34,8 @@ $(function() {
 	function updateTemperature() {
 		$('#temperature').text(thermostat.currentTemperature());
 		$('#temperatureDisplay').css('color', thermostat.colour());
+    $('.temperatureColour').css('background', thermostat.colour());
+    $('#mercury').css('height', 3.125 * thermostat.currentTemperature() + "%");
 	}
 });
 

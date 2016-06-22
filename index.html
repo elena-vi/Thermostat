@@ -10,9 +10,8 @@
   </head>
   <body>
     <div class="outsideWeather">
-      <h1>Outside Weather</h1>
-      <img src="" id="icon" alt="Weather Icon">
-      <h2>Current temperature: <span id="currentTemperature"></span>&#8451;</h2>
+      <h4>Current temperature: <br> <span id="currentTemperature"></span>&#8451;</h4>
+        <img src="" id="icon" alt="Weather Icon">
       <label for="currentCity">Current city</label>
       <select id="currentCity">
         <option value="london">London</option>
@@ -23,16 +22,23 @@
         <option value="prienai">Prienai</option>
       </select>
     </div>
-    <div class="thermostat">
-      <h1>Thermostat</h1>
-      <h2 id='temperatureDisplay'><span id='temperature'></span>&#8451;</h2>
+    <div class="controls">
       <h5>Power Saving Mode is <span id='powermode'>On</span></h5>
-      <div class="controls">
-        <button type="button" id='increase' name="button">+</button>
-        <button type="button" id='decrease' name="button">-</button>
-        <button type="button" id='changePowerMode' name="button">Toggle Powermode</button>
-        <button type="button" id='reset' name="button">Reset</button>
+      <button type="button" id='increase' name="button">+</button>
+      <button type="button" id='decrease' name="button">-</button>
+      <button type="button" id='changePowerMode' name="button">Toggle<br>Powermode</button>
+      <button type="button" id='reset' name="button">Reset</button>
+    </div>
+    <div class="thermostat">
+      <h2 id='temperatureDisplay'><span id='temperature'></span>&#8451;</h2>
+      <div class='thermometer'>
+        <div id='minibulb'></div>
+        <div id='neck'>
+          <div id='mercury' class='temperatureColour'></div>
+        </div>
+        <div id='bulb' class='temperatureColour'></div>
       </div>
     </div>
+
   </body>
 </html>

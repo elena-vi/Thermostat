@@ -1,3 +1,61 @@
 body{
 	font-family: sans-serif;
+  background: #b3b0ba;
+  width: 520px;
+  margin: 100px auto;
 }
+
+#neck {
+  margin: auto;
+  height: 194px;
+  width: 37px;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+#bulb {
+  margin: -10px auto;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  background: green;
+}
+
+#minibulb {
+  margin: auto auto -25px;
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+#mercury {
+  background-color: green;
+  margin: auto;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    position: absolute;
+}
+
+h4, .controls, .thermostat, .thermometer {
+  display: inline-block;
+}
+.thermostat{
+  top: -50px;
+  position: relative;
+}
+button {
+    display: block;
+    margin: 10px auto;
+    font-size: 20px;
+    padding: 10px;
+}
+#temperatureDisplay{
+  font-size: 119px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  margin: 93px auto 0;
+  display: inherit;
+  }
