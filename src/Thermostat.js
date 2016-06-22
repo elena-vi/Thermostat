@@ -40,12 +40,12 @@ Thermostat.prototype = {
   },
   displayColour: function() {
     if (this.getCurrentTemp() < this.LOW_USAGE_TEMP) {
-      return 'Green';
+      return "green";
     }
     if (this.getCurrentTemp() <= this.NORMAL_USAGE_TEMP) {
-      return 'Yellow';
+      return "yellow";
     }
-    return 'Red';
+    return "red";
   },
   powerSavingModeStatus: function() {
     return this.maximumTemp === this.MAXIMUM_TEMP_POWER_SAVING_MODE_ON;

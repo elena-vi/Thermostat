@@ -63,7 +63,7 @@ describe('Thermostat', function() {
       thermostat.powerSavingModeOn();
       expect(thermostat.getCurrentTemp()).toEqual(thermostat.MAXIMUM_TEMP_POWER_SAVING_MODE_ON);
     });
-    
+
     describe('.powerSavingModeStatus', function() {
       it('will be true', function() {
         expect(thermostat.powerSavingModeStatus()).toBeTruthy();
@@ -77,17 +77,17 @@ describe('Thermostat', function() {
       for (var i = 1; i <= 3 ; i++) {
         thermostat.decreaseTemp();
       }
-      expect(thermostat.displayColour()).toEqual('Green');
+      expect(thermostat.displayColour()).toEqual('green');
     });
     it('is yellow if temperature between 18 and 25 degrees', function() {
-      expect(thermostat.displayColour()).toEqual('Yellow');
+      expect(thermostat.displayColour()).toEqual('yellow');
     });
     it('is red if temperature is above 25 degrees', function() {
       thermostat.powerSavingModeOff();
       for (var i = 1; i < 8; i++) {
         thermostat.increaseTemp();
       }
-      expect(thermostat.displayColour()).toEqual('Red');
+      expect(thermostat.displayColour()).toEqual('red');
     });
   });
 
