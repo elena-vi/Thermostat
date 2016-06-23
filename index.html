@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Thermostat</title>
+  </head>
+  <body>
+    <section>
+      <h1 id="temperature-color" style="color:black"><span id="temperature"></span>&#8451;</h1>
+      <h2>
+        <span id="city"></span> temperature: <span id="outside-temperature"></span>&#8451;
+      </h2>
+      <img src="" alt="weather icon" id="weather-icon">
+      <label for="current-city">Select your city:</label>
+      <select id="current-city">
+        <option value="london">London</option>
+        <option value="york">York</option>
+        <option value="faro">Faro</option>
+        <option value="vilnius">Vilnius</option>
+      </select>
+      <form id="city-search">
+        <label for="search">Can't find your city?</label>
+        <input type="text" name="search" placeholder="Maybe try here...?">
+        <button type="submit">Search</button>
+      </form>
+      <p>
+        <button id="temperature-down">-</button>
+        <button id="temperature-up">+</button><br>
+        <button id="temperature-reset">reset</button><br>
+        power saving mode is <span id="power-saving-status">on</span><br>
+        <button id="powersaving-on">PSM on</button>
+        <button id="powersaving-off">PSM off</button>
+      </p>
+    </section>
+    <script src="src/Thermostat.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="src/Interface.js"></script>
+
+    </script>
+  </body>
+</html>
