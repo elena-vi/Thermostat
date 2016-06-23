@@ -32,7 +32,7 @@ $(document).ready(function() {
     $('#temperature').text(thermostat.getCurrentTemp());
     $('#temperature').css("background-color", thermostat.displayColour());
   }
-
+  
   function updatePowerSavingStatus() {
     if (thermostat.powerSavingModeStatus()) {
       $('#power-saving-status').text('on');
